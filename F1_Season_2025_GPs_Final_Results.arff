@@ -1,0 +1,428 @@
+@RELATION F1_2025_Full_Season_Analysis
+
+@ATTRIBUTE Track {"Australia","China","Japan","Bahrain","Saudi Arabia","Miami","Emilia-Romagna","Monaco","Spain","Canada","Austria","Great Britain","Hungary","Belgium","Netherlands","Italy","Azerbaijan","Singapore","USA","Mexico","Brazil","Las Vegas","Qatar","Abu Dhabi"}
+@ATTRIBUTE Team {"Alpine Renault","Aston Martin Aramco Mercedes","Ferrari","Haas Ferrari","Kick Sauber Ferrari","McLaren Mercedes","Mercedes","Racing Bulls Honda RBPT","Red Bull Racing Honda RBPT","Williams Mercedes"}
+@ATTRIBUTE Driver {"Alexander Albon","Carlos Sainz","Charles Leclerc","Esteban Ocon","Fernando Alonso","Jack Doohan","Franco Colapinto","Gabriel Bortoleto","George Russell","Isack Hadjar","Kimi Antonelli","Lance Stroll","Lando Norris","Lewis Hamilton","Liam Lawson","Max Verstappen","Nico Hulkenberg","Oliver Bearman","Oscar Piastri","Pierre Gasly","Yuki Tsunoda"}
+@ATTRIBUTE Starting_Grid NUMERIC
+@ATTRIBUTE Points NUMERIC
+
+@DATA
+"Australia","McLaren Mercedes","Lando Norris",1,25
+"Australia","Red Bull Racing Honda RBPT","Max Verstappen",3,18
+"Australia","Mercedes","George Russell",4,15
+"Australia","Mercedes","Kimi Antonelli",16,12
+"Australia","Williams Mercedes","Alexander Albon",6,10
+"Australia","Aston Martin Aramco Mercedes","Lance Stroll",13,8
+"Australia","Kick Sauber Ferrari","Nico Hulkenberg",17,6
+"Australia","Ferrari","Charles Leclerc",7,4
+"Australia","McLaren Mercedes","Oscar Piastri",2,2
+"Australia","Ferrari","Lewis Hamilton",8,1
+"Australia","Alpine Renault","Pierre Gasly",9,0
+"Australia","Racing Bulls Honda RBPT","Yuki Tsunoda",5,0
+"Australia","Haas Ferrari","Esteban Ocon",19,0
+"Australia","Haas Ferrari","Oliver Bearman",20,0
+"China","McLaren Mercedes","Oscar Piastri",1,25
+"China","McLaren Mercedes","Lando Norris",3,18
+"China","Mercedes","George Russell",2,15
+"China","Red Bull Racing Honda RBPT","Max Verstappen",4,12
+"China","Haas Ferrari","Esteban Ocon",11,10
+"China","Mercedes","Kimi Antonelli",8,8
+"China","Williams Mercedes","Alexander Albon",10,6
+"China","Haas Ferrari","Oliver Bearman",17,4
+"China","Aston Martin Aramco Mercedes","Lance Stroll",14,2
+"China","Williams Mercedes","Carlos Sainz",15,1
+"China","Racing Bulls Honda RBPT","Isack Hadjar",7,0
+"China","Red Bull Racing Honda RBPT","Liam Lawson",20,0
+"China","Alpine Renault","Jack Doohan",18,0
+"China","Kick Sauber Ferrari","Gabriel Bortoleto",19,0
+"China","Kick Sauber Ferrari","Nico Hulkenberg",12,0
+"China","Racing Bulls Honda RBPT","Yuki Tsunoda",9,0
+"Japan","Red Bull Racing Honda RBPT","Max Verstappen",1,25
+"Japan","McLaren Mercedes","Lando Norris",2,18
+"Japan","McLaren Mercedes","Oscar Piastri",3,15
+"Japan","Ferrari","Charles Leclerc",4,12
+"Japan","Mercedes","George Russell",5,10
+"Japan","Mercedes","Kimi Antonelli",6,8
+"Japan","Ferrari","Lewis Hamilton",8,6
+"Japan","Racing Bulls Honda RBPT","Isack Hadjar",7,4
+"Japan","Williams Mercedes","Alexander Albon",9,2
+"Japan","Haas Ferrari","Oliver Bearman",10,1
+"Japan","Aston Martin Aramco Mercedes","Fernando Alonso",12,0
+"Japan","Red Bull Racing Honda RBPT","Yuki Tsunoda",14,0
+"Japan","Alpine Renault","Pierre Gasly",11,0
+"Japan","Williams Mercedes","Carlos Sainz",15,0
+"Japan","Alpine Renault","Jack Doohan",19,0
+"Japan","Kick Sauber Ferrari","Nico Hulkenberg",16,0
+"Japan","Racing Bulls Honda RBPT","Liam Lawson",13,0
+"Japan","Haas Ferrari","Esteban Ocon",18,0
+"Japan","Kick Sauber Ferrari","Gabriel Bortoleto",17,0
+"Japan","Aston Martin Aramco Mercedes","Lance Stroll",20,0
+"Bahrain","McLaren Mercedes","Oscar Piastri",1,25
+"Bahrain","Mercedes","George Russell",3,18
+"Bahrain","McLaren Mercedes","Lando Norris",6,15
+"Bahrain","Ferrari","Charles Leclerc",2,12
+"Bahrain","Ferrari","Lewis Hamilton",9,10
+"Bahrain","Red Bull Racing Honda RBPT","Max Verstappen",7,8
+"Bahrain","Alpine Renault","Pierre Gasly",4,6
+"Bahrain","Haas Ferrari","Esteban Ocon",14,4
+"Bahrain","Red Bull Racing Honda RBPT","Yuki Tsunoda",10,2
+"Bahrain","Haas Ferrari","Oliver Bearman",20,1
+"Bahrain","Mercedes","Kimi Antonelli",5,0
+"Bahrain","Williams Mercedes","Alexander Albon",15,0
+"Bahrain","Racing Bulls Honda RBPT","Isack Hadjar",12,0
+"Bahrain","Alpine Renault","Jack Doohan",11,0
+"Bahrain","Aston Martin Aramco Mercedes","Fernando Alonso",13,0
+"Bahrain","Racing Bulls Honda RBPT","Liam Lawson",17,0
+"Bahrain","Aston Martin Aramco Mercedes","Lance Stroll",19,0
+"Bahrain","Kick Sauber Ferrari","Gabriel Bortoleto",18,0
+"Saudi Arabia","McLaren Mercedes","Oscar Piastri",2,25
+"Saudi Arabia","Red Bull Racing Honda RBPT","Max Verstappen",1,18
+"Saudi Arabia","Ferrari","Charles Leclerc",4,15
+"Saudi Arabia","McLaren Mercedes","Lando Norris",10,12
+"Saudi Arabia","Mercedes","George Russell",3,10
+"Saudi Arabia","Mercedes","Kimi Antonelli",5,8
+"Saudi Arabia","Ferrari","Lewis Hamilton",7,6
+"Saudi Arabia","Williams Mercedes","Carlos Sainz",6,4
+"Saudi Arabia","Williams Mercedes","Alexander Albon",11,2
+"Saudi Arabia","Racing Bulls Honda RBPT","Isack Hadjar",14,1
+"Saudi Arabia","Aston Martin Aramco Mercedes","Fernando Alonso",13,0
+"Saudi Arabia","Racing Bulls Honda RBPT","Liam Lawson",12,0
+"Saudi Arabia","Haas Ferrari","Oliver Bearman",15,0
+"Saudi Arabia","Haas Ferrari","Esteban Ocon",19,0
+"Saudi Arabia","Kick Sauber Ferrari","Nico Hulkenberg",18,0
+"Saudi Arabia","Aston Martin Aramco Mercedes","Lance Stroll",16,0
+"Saudi Arabia","Alpine Renault","Jack Doohan",17,0
+"Saudi Arabia","Kick Sauber Ferrari","Gabriel Bortoleto",20,0
+"Miami","McLaren Mercedes","Oscar Piastri",4,25
+"Miami","McLaren Mercedes","Lando Norris",2,18
+"Miami","Mercedes","George Russell",5,15
+"Miami","Red Bull Racing Honda RBPT","Max Verstappen",1,12
+"Miami","Williams Mercedes","Alexander Albon",7,10
+"Miami","Mercedes","Kimi Antonelli",3,8
+"Miami","Ferrari","Charles Leclerc",8,6
+"Miami","Ferrari","Lewis Hamilton",12,4
+"Miami","Williams Mercedes","Carlos Sainz",6,2
+"Miami","Red Bull Racing Honda RBPT","Yuki Tsunoda",10,1
+"Miami","Racing Bulls Honda RBPT","Isack Hadjar",11,0
+"Miami","Haas Ferrari","Esteban Ocon",9,0
+"Miami","Alpine Renault","Pierre Gasly",20,0
+"Miami","Kick Sauber Ferrari","Nico Hulkenberg",16,0
+"Miami","Aston Martin Aramco Mercedes","Fernando Alonso",17,0
+"Miami","Aston Martin Aramco Mercedes","Lance Stroll",18,0
+"Emilia-Romagna","Red Bull Racing Honda RBPT","Max Verstappen",2,25
+"Emilia-Romagna","McLaren Mercedes","Lando Norris",4,18
+"Emilia-Romagna","McLaren Mercedes","Oscar Piastri",1,15
+"Emilia-Romagna","Ferrari","Lewis Hamilton",12,12
+"Emilia-Romagna","Williams Mercedes","Alexander Albon",7,10
+"Emilia-Romagna","Ferrari","Charles Leclerc",11,8
+"Emilia-Romagna","Mercedes","George Russell",3,6
+"Emilia-Romagna","Williams Mercedes","Carlos Sainz",6,4
+"Emilia-Romagna","Racing Bulls Honda RBPT","Isack Hadjar",9,2
+"Emilia-Romagna","Red Bull Racing Honda RBPT","Yuki Tsunoda",20,1
+"Emilia-Romagna","Aston Martin Aramco Mercedes","Fernando Alonso",5,0
+"Emilia-Romagna","Kick Sauber Ferrari","Nico Hulkenberg",17,0
+"Emilia-Romagna","Alpine Renault","Pierre Gasly",10,0
+"Emilia-Romagna","Racing Bulls Honda RBPT","Liam Lawson",15,0
+"Emilia-Romagna","Aston Martin Aramco Mercedes","Lance Stroll",8,0
+"Emilia-Romagna","Alpine Renault","Franco Colapinto",16,0
+"Emilia-Romagna","Haas Ferrari","Oliver Bearman",19,0
+"Emilia-Romagna","Kick Sauber Ferrari","Gabriel Bortoleto",14,0
+"Monaco","McLaren Mercedes","Lando Norris",1,25
+"Monaco","Ferrari","Charles Leclerc",2,18
+"Monaco","McLaren Mercedes","Oscar Piastri",3,15
+"Monaco","Red Bull Racing Honda RBPT","Max Verstappen",4,12
+"Monaco","Ferrari","Lewis Hamilton",7,10
+"Monaco","Racing Bulls Honda RBPT","Isack Hadjar",5,8
+"Monaco","Haas Ferrari","Esteban Ocon",8,6
+"Monaco","Racing Bulls Honda RBPT","Liam Lawson",9,4
+"Monaco","Williams Mercedes","Alexander Albon",10,2
+"Monaco","Williams Mercedes","Carlos Sainz",11,1
+"Monaco","Mercedes","George Russell",14,0
+"Monaco","Haas Ferrari","Oliver Bearman",20,0
+"Monaco","Alpine Renault","Franco Colapinto",18,0
+"Monaco","Kick Sauber Ferrari","Gabriel Bortoleto",16,0
+"Monaco","Aston Martin Aramco Mercedes","Lance Stroll",19,0
+"Monaco","Kick Sauber Ferrari","Nico Hulkenberg",13,0
+"Monaco","Red Bull Racing Honda RBPT","Yuki Tsunoda",12,0
+"Monaco","Mercedes","Kimi Antonelli",15,0
+"Spain","McLaren Mercedes","Oscar Piastri",1,25
+"Spain","McLaren Mercedes","Lando Norris",2,18
+"Spain","Ferrari","Charles Leclerc",7,15
+"Spain","Mercedes","George Russell",4,12
+"Spain","Kick Sauber Ferrari","Nico Hulkenberg",15,10
+"Spain","Ferrari","Lewis Hamilton",5,8
+"Spain","Racing Bulls Honda RBPT","Isack Hadjar",9,6
+"Spain","Alpine Renault","Pierre Gasly",8,4
+"Spain","Aston Martin Aramco Mercedes","Fernando Alonso",10,2
+"Spain","Red Bull Racing Honda RBPT","Max Verstappen",3,1
+"Spain","Racing Bulls Honda RBPT","Liam Lawson",13,0
+"Spain","Kick Sauber Ferrari","Gabriel Bortoleto",12,0
+"Spain","Red Bull Racing Honda RBPT","Yuki Tsunoda",19,0
+"Spain","Williams Mercedes","Carlos Sainz",17,0
+"Spain","Alpine Renault","Franco Colapinto",18,0
+"Spain","Haas Ferrari","Esteban Ocon",16,0
+"Spain","Haas Ferrari","Oliver Bearman",14,0
+"Canada","Mercedes","George Russell",1,25
+"Canada","Red Bull Racing Honda RBPT","Max Verstappen",2,18
+"Canada","Mercedes","Kimi Antonelli",4,15
+"Canada","McLaren Mercedes","Oscar Piastri",3,12
+"Canada","Ferrari","Charles Leclerc",8,10
+"Canada","Ferrari","Lewis Hamilton",5,8
+"Canada","Aston Martin Aramco Mercedes","Fernando Alonso",6,6
+"Canada","Kick Sauber Ferrari","Nico Hulkenberg",11,4
+"Canada","Haas Ferrari","Esteban Ocon",14,2
+"Canada","Williams Mercedes","Carlos Sainz",16,1
+"Canada","Haas Ferrari","Oliver Bearman",13,0
+"Canada","Red Bull Racing Honda RBPT","Yuki Tsunoda",18,0
+"Canada","Alpine Renault","Franco Colapinto",10,0
+"Canada","Kick Sauber Ferrari","Gabriel Bortoleto",15,0
+"Canada","Alpine Renault","Pierre Gasly",20,0
+"Canada","Racing Bulls Honda RBPT","Isack Hadjar",12,0
+"Canada","Aston Martin Aramco Mercedes","Lance Stroll",17,0
+"Austria","McLaren Mercedes","Lando Norris",1,25
+"Austria","McLaren Mercedes","Oscar Piastri",3,18
+"Austria","Ferrari","Charles Leclerc",2,15
+"Austria","Ferrari","Lewis Hamilton",4,12
+"Austria","Mercedes","George Russell",5,10
+"Austria","Racing Bulls Honda RBPT","Liam Lawson",6,8
+"Austria","Aston Martin Aramco Mercedes","Fernando Alonso",11,6
+"Austria","Kick Sauber Ferrari","Gabriel Bortoleto",8,4
+"Austria","Kick Sauber Ferrari","Nico Hulkenberg",20,2
+"Austria","Haas Ferrari","Esteban Ocon",17,1
+"Austria","Haas Ferrari","Oliver Bearman",15,0
+"Austria","Racing Bulls Honda RBPT","Isack Hadjar",13,0
+"Austria","Alpine Renault","Pierre Gasly",10,0
+"Austria","Aston Martin Aramco Mercedes","Lance Stroll",16,0
+"Austria","Alpine Renault","Franco Colapinto",14,0
+"Austria","Red Bull Racing Honda RBPT","Yuki Tsunoda",18,0
+"Great Britain","McLaren Mercedes","Lando Norris",3,25
+"Great Britain","McLaren Mercedes","Oscar Piastri",2,18
+"Great Britain","Kick Sauber Ferrari","Nico Hulkenberg",19,15
+"Great Britain","Ferrari","Lewis Hamilton",5,12
+"Great Britain","Red Bull Racing Honda RBPT","Max Verstappen",1,10
+"Great Britain","Alpine Renault","Pierre Gasly",8,8
+"Great Britain","Aston Martin Aramco Mercedes","Lance Stroll",17,6
+"Great Britain","Williams Mercedes","Alexander Albon",13,4
+"Great Britain","Aston Martin Aramco Mercedes","Fernando Alonso",7,2
+"Great Britain","Mercedes","George Russell",4,1
+"Great Britain","Haas Ferrari","Oliver Bearman",18,0
+"Great Britain","Williams Mercedes","Carlos Sainz",9,0
+"Great Britain","Haas Ferrari","Esteban Ocon",14,0
+"Great Britain","Ferrari","Charles Leclerc",6,0
+"Great Britain","Red Bull Racing Honda RBPT","Yuki Tsunoda",11,0
+"Belgium","McLaren Mercedes","Oscar Piastri",2,25
+"Belgium","McLaren Mercedes","Lando Norris",1,18
+"Belgium","Ferrari","Charles Leclerc",3,15
+"Belgium","Red Bull Racing Honda RBPT","Max Verstappen",4,12
+"Belgium","Mercedes","George Russell",6,10
+"Belgium","Williams Mercedes","Alexander Albon",5,8
+"Belgium","Ferrari","Lewis Hamilton",18,6
+"Belgium","Racing Bulls Honda RBPT","Liam Lawson",9,4
+"Belgium","Kick Sauber Ferrari","Gabriel Bortoleto",10,2
+"Belgium","Alpine Renault","Pierre Gasly",13,1
+"Belgium","Haas Ferrari","Oliver Bearman",12,0
+"Belgium","Kick Sauber Ferrari","Nico Hulkenberg",14,0
+"Belgium","Red Bull Racing Honda RBPT","Yuki Tsunoda",7,0
+"Belgium","Aston Martin Aramco Mercedes","Lance Stroll",16,0
+"Belgium","Haas Ferrari","Esteban Ocon",11,0
+"Belgium","Mercedes","Kimi Antonelli",19,0
+"Belgium","Aston Martin Aramco Mercedes","Fernando Alonso",20,0
+"Belgium","Williams Mercedes","Carlos Sainz",17,0
+"Belgium","Alpine Renault","Franco Colapinto",15,0
+"Belgium","Racing Bulls Honda RBPT","Isack Hadjar",8,0
+"Hungary","McLaren Mercedes","Lando Norris",3,25
+"Hungary","McLaren Mercedes","Oscar Piastri",2,18
+"Hungary","Mercedes","George Russell",4,15
+"Hungary","Ferrari","Charles Leclerc",1,12
+"Hungary","Aston Martin Aramco Mercedes","Fernando Alonso",5,10
+"Hungary","Kick Sauber Ferrari","Gabriel Bortoleto",7,8
+"Hungary","Aston Martin Aramco Mercedes","Lance Stroll",6,6
+"Hungary","Racing Bulls Honda RBPT","Liam Lawson",9,4
+"Hungary","Red Bull Racing Honda RBPT","Max Verstappen",8,2
+"Hungary","Mercedes","Kimi Antonelli",15,1
+"Hungary","Racing Bulls Honda RBPT","Isack Hadjar",10,0
+"Hungary","Ferrari","Lewis Hamilton",12,0
+"Hungary","Kick Sauber Ferrari","Nico Hulkenberg",18,0
+"Hungary","Williams Mercedes","Carlos Sainz",13,0
+"Hungary","Williams Mercedes","Alexander Albon",19,0
+"Hungary","Haas Ferrari","Esteban Ocon",17,0
+"Hungary","Red Bull Racing Honda RBPT","Yuki Tsunoda",20,0
+"Hungary","Alpine Renault","Franco Colapinto",14,0
+"Hungary","Alpine Renault","Pierre Gasly",16,0
+"Netherlands","McLaren Mercedes","Oscar Piastri",1,25
+"Netherlands","Red Bull Racing Honda RBPT","Max Verstappen",3,18
+"Netherlands","Racing Bulls Honda RBPT","Isack Hadjar",4,15
+"Netherlands","Mercedes","George Russell",5,12
+"Netherlands","Williams Mercedes","Alexander Albon",15,10
+"Netherlands","Haas Ferrari","Oliver Bearman",20,8
+"Netherlands","Aston Martin Aramco Mercedes","Lance Stroll",19,6
+"Netherlands","Aston Martin Aramco Mercedes","Fernando Alonso",10,4
+"Netherlands","Red Bull Racing Honda RBPT","Yuki Tsunoda",12,2
+"Netherlands","Haas Ferrari","Esteban Ocon",18,1
+"Netherlands","Alpine Renault","Franco Colapinto",16,0
+"Netherlands","Racing Bulls Honda RBPT","Liam Lawson",8,0
+"Netherlands","Williams Mercedes","Carlos Sainz",9,0
+"Netherlands","Kick Sauber Ferrari","Nico Hulkenberg",17,0
+"Netherlands","Kick Sauber Ferrari","Gabriel Bortoleto",13,0
+"Netherlands","Mercedes","Kimi Antonelli",11,0
+"Netherlands","Alpine Renault","Pierre Gasly",14,0
+"Italy","Red Bull Racing Honda RBPT","Max Verstappen",1,25
+"Italy","McLaren Mercedes","Lando Norris",2,18
+"Italy","McLaren Mercedes","Oscar Piastri",3,15
+"Italy","Ferrari","Charles Leclerc",4,12
+"Italy","Mercedes","George Russell",5,10
+"Italy","Ferrari","Lewis Hamilton",10,8
+"Italy","Williams Mercedes","Alexander Albon",14,6
+"Italy","Kick Sauber Ferrari","Gabriel Bortoleto",7,4
+"Italy","Mercedes","Kimi Antonelli",6,2
+"Italy","Racing Bulls Honda RBPT","Isack Hadjar",19,1
+"Italy","Williams Mercedes","Carlos Sainz",13,0
+"Italy","Haas Ferrari","Oliver Bearman",11,0
+"Italy","Red Bull Racing Honda RBPT","Yuki Tsunoda",9,0
+"Italy","Racing Bulls Honda RBPT","Liam Lawson",18,0
+"Italy","Haas Ferrari","Esteban Ocon",15,0
+"Italy","Alpine Renault","Pierre Gasly",20,0
+"Italy","Alpine Renault","Franco Colapinto",17,0
+"Italy","Aston Martin Aramco Mercedes","Lance Stroll",16,0
+"Azerbaijan","Red Bull Racing Honda RBPT","Max Verstappen",1,25
+"Azerbaijan","Mercedes","George Russell",5,18
+"Azerbaijan","Williams Mercedes","Carlos Sainz",2,15
+"Azerbaijan","Mercedes","Kimi Antonelli",4,12
+"Azerbaijan","Racing Bulls Honda RBPT","Liam Lawson",3,10
+"Azerbaijan","Red Bull Racing Honda RBPT","Yuki Tsunoda",6,8
+"Azerbaijan","McLaren Mercedes","Lando Norris",7,6
+"Azerbaijan","Ferrari","Lewis Hamilton",12,4
+"Azerbaijan","Ferrari","Charles Leclerc",10,2
+"Azerbaijan","Racing Bulls Honda RBPT","Isack Hadjar",8,1
+"Azerbaijan","Kick Sauber Ferrari","Gabriel Bortoleto",13,0
+"Azerbaijan","Haas Ferrari","Oliver Bearman",15,0
+"Azerbaijan","Williams Mercedes","Alexander Albon",19,0
+"Azerbaijan","Haas Ferrari","Esteban Ocon",20,0
+"Azerbaijan","Aston Martin Aramco Mercedes","Fernando Alonso",11,0
+"Azerbaijan","Kick Sauber Ferrari","Nico Hulkenberg",17,0
+"Azerbaijan","Aston Martin Aramco Mercedes","Lance Stroll",14,0
+"Azerbaijan","Alpine Renault","Pierre Gasly",18,0
+"Azerbaijan","Alpine Renault","Franco Colapinto",16,0
+"Singapore","Mercedes","George Russell",1,25
+"Singapore","Red Bull Racing Honda RBPT","Max Verstappen",2,18
+"Singapore","McLaren Mercedes","Lando Norris",5,15
+"Singapore","McLaren Mercedes","Oscar Piastri",3,12
+"Singapore","Mercedes","Kimi Antonelli",4,10
+"Singapore","Ferrari","Charles Leclerc",7,8
+"Singapore","Aston Martin Aramco Mercedes","Fernando Alonso",10,6
+"Singapore","Ferrari","Lewis Hamilton",6,4
+"Singapore","Haas Ferrari","Oliver Bearman",9,2
+"Singapore","Williams Mercedes","Carlos Sainz",18,1
+"Singapore","Racing Bulls Honda RBPT","Isack Hadjar",8,0
+"Singapore","Red Bull Racing Honda RBPT","Yuki Tsunoda",13,0
+"Singapore","Aston Martin Aramco Mercedes","Lance Stroll",15,0
+"Singapore","Williams Mercedes","Alexander Albon",20,0
+"Singapore","Racing Bulls Honda RBPT","Liam Lawson",12,0
+"Singapore","Alpine Renault","Franco Colapinto",16,0
+"Singapore","Kick Sauber Ferrari","Gabriel Bortoleto",14,0
+"Singapore","Haas Ferrari","Esteban Ocon",17,0
+"Singapore","Alpine Renault","Pierre Gasly",19,0
+"Singapore","Kick Sauber Ferrari","Nico Hulkenberg",11,0
+"USA","Red Bull Racing Honda RBPT","Max Verstappen",1,25
+"USA","McLaren Mercedes","Lando Norris",2,18
+"USA","Ferrari","Charles Leclerc",3,15
+"USA","Ferrari","Lewis Hamilton",5,12
+"USA","McLaren Mercedes","Oscar Piastri",6,10
+"USA","Mercedes","George Russell",4,8
+"USA","Red Bull Racing Honda RBPT","Yuki Tsunoda",13,6
+"USA","Kick Sauber Ferrari","Nico Hulkenberg",11,4
+"USA","Haas Ferrari","Oliver Bearman",8,2
+"USA","Aston Martin Aramco Mercedes","Fernando Alonso",10,1
+"USA","Racing Bulls Honda RBPT","Liam Lawson",12,0
+"USA","Aston Martin Aramco Mercedes","Lance Stroll",19,0
+"USA","Mercedes","Kimi Antonelli",7,0
+"USA","Williams Mercedes","Alexander Albon",18,0
+"USA","Haas Ferrari","Esteban Ocon",17,0
+"USA","Racing Bulls Honda RBPT","Isack Hadjar",20,0
+"USA","Alpine Renault","Franco Colapinto",15,0
+"USA","Kick Sauber Ferrari","Gabriel Bortoleto",16,0
+"USA","Alpine Renault","Pierre Gasly",14,0
+"Mexico","McLaren Mercedes","Lando Norris",1,25
+"Mexico","Ferrari","Charles Leclerc",2,18
+"Mexico","Red Bull Racing Honda RBPT","Max Verstappen",5,15
+"Mexico","Haas Ferrari","Oliver Bearman",9,12
+"Mexico","McLaren Mercedes","Oscar Piastri",7,10
+"Mexico","Mercedes","Kimi Antonelli",6,8
+"Mexico","Mercedes","George Russell",4,6
+"Mexico","Ferrari","Lewis Hamilton",3,4
+"Mexico","Haas Ferrari","Esteban Ocon",11,2
+"Mexico","Kick Sauber Ferrari","Gabriel Bortoleto",16,1
+"Mexico","Red Bull Racing Honda RBPT","Yuki Tsunoda",10,0
+"Mexico","Williams Mercedes","Alexander Albon",17,0
+"Mexico","Racing Bulls Honda RBPT","Isack Hadjar",8,0
+"Mexico","Aston Martin Aramco Mercedes","Lance Stroll",19,0
+"Mexico","Alpine Renault","Pierre Gasly",18,0
+"Mexico","Alpine Renault","Franco Colapinto",20,0
+"Brazil","McLaren Mercedes","Lando Norris",1,25
+"Brazil","Mercedes","Kimi Antonelli",2,18
+"Brazil","Red Bull Racing Honda RBPT","Max Verstappen",19,15
+"Brazil","Mercedes","George Russell",6,12
+"Brazil","McLaren Mercedes","Oscar Piastri",4,10
+"Brazil","Haas Ferrari","Oliver Bearman",8,8
+"Brazil","Racing Bulls Honda RBPT","Liam Lawson",7,6
+"Brazil","Racing Bulls Honda RBPT","Isack Hadjar",5,4
+"Brazil","Kick Sauber Ferrari","Nico Hulkenberg",10,2
+"Brazil","Alpine Renault","Pierre Gasly",9,1
+"Brazil","Williams Mercedes","Alexander Albon",12,0
+"Brazil","Haas Ferrari","Esteban Ocon",20,0
+"Brazil","Williams Mercedes","Carlos Sainz",15,0
+"Brazil","Aston Martin Aramco Mercedes","Fernando Alonso",11,0
+"Brazil","Alpine Renault","Franco Colapinto",16,0
+"Brazil","Aston Martin Aramco Mercedes","Lance Stroll",14,0
+"Brazil","Red Bull Racing Honda RBPT","Yuki Tsunoda",17,0
+"Las Vegas","Red Bull Racing Honda RBPT","Max Verstappen",2,25
+"Las Vegas","Mercedes","George Russell",4,18
+"Las Vegas","Mercedes","Kimi Antonelli",17,15
+"Las Vegas","Ferrari","Charles Leclerc",9,12
+"Las Vegas","Williams Mercedes","Carlos Sainz",3,10
+"Las Vegas","Racing Bulls Honda RBPT","Isack Hadjar",8,8
+"Las Vegas","Kick Sauber Ferrari","Nico Hulkenberg",11,6
+"Las Vegas","Ferrari","Lewis Hamilton",19,4
+"Las Vegas","Haas Ferrari","Esteban Ocon",13,2
+"Las Vegas","Haas Ferrari","Oliver Bearman",14,1
+"Las Vegas","Aston Martin Aramco Mercedes","Fernando Alonso",7,0
+"Las Vegas","Red Bull Racing Honda RBPT","Yuki Tsunoda",20,0
+"Las Vegas","Alpine Renault","Pierre Gasly",10,0
+"Las Vegas","Racing Bulls Honda RBPT","Liam Lawson",6,0
+"Las Vegas","Alpine Renault","Franco Colapinto",15,0
+"Qatar","Red Bull Racing Honda RBPT","Max Verstappen",3,25
+"Qatar","McLaren Mercedes","Oscar Piastri",1,18
+"Qatar","Williams Mercedes","Carlos Sainz",7,15
+"Qatar","McLaren Mercedes","Lando Norris",2,12
+"Qatar","Mercedes","Kimi Antonelli",5,10
+"Qatar","Mercedes","George Russell",4,8
+"Qatar","Aston Martin Aramco Mercedes","Fernando Alonso",8,6
+"Qatar","Ferrari","Charles Leclerc",10,4
+"Qatar","Racing Bulls Honda RBPT","Liam Lawson",12,2
+"Qatar","Red Bull Racing Honda RBPT","Yuki Tsunoda",15,1
+"Qatar","Williams Mercedes","Alexander Albon",14,0
+"Qatar","Ferrari","Lewis Hamilton",17,0
+"Qatar","Kick Sauber Ferrari","Gabriel Bortoleto",19,0
+"Qatar","Alpine Renault","Franco Colapinto",20,0
+"Qatar","Haas Ferrari","Esteban Ocon",16,0
+"Qatar","Alpine Renault","Pierre Gasly",9,0
+"Abu Dhabi","Red Bull Racing Honda RBPT","Max Verstappen",1,25
+"Abu Dhabi","McLaren Mercedes","Oscar Piastri",3,18
+"Abu Dhabi","McLaren Mercedes","Lando Norris",2,15
+"Abu Dhabi","Ferrari","Charles Leclerc",5,12
+"Abu Dhabi","Mercedes","George Russell",4,10
+"Abu Dhabi","Aston Martin Aramco Mercedes","Fernando Alonso",6,8
+"Abu Dhabi","Haas Ferrari","Esteban Ocon",8,6
+"Abu Dhabi","Ferrari","Lewis Hamilton",16,4
+"Abu Dhabi","Kick Sauber Ferrari","Nico Hulkenberg",18,2
+"Abu Dhabi","Aston Martin Aramco Mercedes","Lance Stroll",15,1
+"Abu Dhabi","Kick Sauber Ferrari","Gabriel Bortoleto",7,0
+"Abu Dhabi","Haas Ferrari","Oliver Bearman",11,0
+"Abu Dhabi","Williams Mercedes","Carlos Sainz",12,0
+"Abu Dhabi","Red Bull Racing Honda RBPT","Yuki Tsunoda",10,0
+"Abu Dhabi","Mercedes","Kimi Antonelli",14,0
+"Abu Dhabi","Williams Mercedes","Alexander Albon",17,0
+"Abu Dhabi","Racing Bulls Honda RBPT","Isack Hadjar",9,0
+"Abu Dhabi","Racing Bulls Honda RBPT","Liam Lawson",13,0
+"Abu Dhabi","Alpine Renault","Pierre Gasly",19,0
+"Abu Dhabi","Alpine Renault","Franco Colapinto",20,0
